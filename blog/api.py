@@ -42,7 +42,8 @@ class BlogViewSet(ModelViewSet):
         except KeyError:
             return [permission() for permission in self.permission_classes]
 
-    def filter_is_news
+    def filter_is_news(self):
+        pass
 
 
 class CommentViewSet(viewsets.ModelViewSet):
